@@ -14,29 +14,27 @@
         android:textSize="28sp"
         android:paddingBottom="7dp"
         android:paddingTop="7dp"
-        android:textStyle="normal|bold"
         android:textColor="@android:color/black" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="253dp"
-        android:background="@drawable/textview_border"
-        android:layout_weight="0.31">
+        android:layout_height="match_parent"
+        android:background="@drawable/textview_border">
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="248dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
 
             <TextView
                 android:text="Mã phòng"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView3"
-                android:layout_weight="0.20"
                 android:textSize="18sp" />
 
             <TextView
@@ -49,17 +47,17 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="248dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
 
             <TextView
                 android:text="Loại phòng"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView4"
-                android:layout_weight="0.14"
                 android:textSize="18sp" />
 
             <TextView
@@ -73,17 +71,17 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="248dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
 
             <TextView
                 android:text="Tầng"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView5"
-                android:layout_weight="0.48"
                 android:textSize="18sp" />
 
             <TextView
@@ -95,13 +93,23 @@
 
         </LinearLayout>
 
-        <Button
-            android:text="Chi Tiết Sử Dụng"
-            android:layout_width="248dp"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnChiTietSuDung"
             android:layout_marginTop="40dp"
-            android:layout_gravity="center" />
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:text="Chi Tiết Sử Dụng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnChiTietSuDung"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
 
 
     </LinearLayout>
